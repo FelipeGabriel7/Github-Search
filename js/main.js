@@ -57,7 +57,6 @@ function fetchData() {
 
 
       repositories();
-      console.log(res);
     })
     .catch(error => {
       console.log(error)
@@ -104,7 +103,7 @@ function repositories(res) {
 
   res.forEach((r) => {
     let liRepo = document.createElement('a');
-    console.log(r);
+ 
   
     liRepo.style.textDecoration = 'none';
     liRepo.classList.add('Repositories')

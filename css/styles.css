@@ -246,3 +246,11 @@ body > .container{
         transform: translateY(200px);
     }   
 }
+
+@media(max-width: 768px){
+    .perfil{
+    }
+    .repos{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+}
