@@ -128,8 +128,15 @@ body > .container{
     gap: 0.5rem;
     text-align: center;
     align-items: center;
+    cursor: pointer;
     justify-content: center;
     flex-direction: column;
+    transition: 0.5s all;
+}
+
+.perfil:hover{
+    box-shadow: 0.3rem 0.3rem 0.5rem #444;
+    transition: 0.5s all;
 }
 
 .bio{
@@ -140,7 +147,7 @@ body > .container{
 }
 
 .primary{
-    font-size: 0.5rem;
+    font-size: 1rem;
 }
 
 .secondary{
@@ -148,13 +155,13 @@ body > .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     font-size: 0.8rem;
 }
 
 .location{
-    margin: 0.5rem;
-    font-size: 0.8rem;
+    margin: 1rem;
+    font-size: 0.6rem;
     display: flex;
     flex-direction: column;
 }
@@ -205,6 +212,29 @@ body > .container{
 
 .social-media a{
     text-decoration: none;
+}
+
+.repos{
+   margin: 1rem;
+   text-align: center;
+   display: grid;
+   grid-template-columns: repeat(3 , 1fr);
+   gap: 1rem;
+   cursor: pointer;
+}
+
+.Repositories {
+    text-decoration: none;
+    padding: 0.1rem 0.2rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    background: rgb(8, 12, 71);
+}
+
+.Repositories:hover{
+    transition: 0.3s all;
+    color: #444;
+    background: #fff;
 }
 
 @keyframes modal{
